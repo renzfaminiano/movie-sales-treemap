@@ -1,0 +1,65 @@
+body {
+    background-color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    color:white;
+    
+}
+
+#bg-image{
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-image: url('https://images.unsplash.com/photo-1593277992013-05e17a5f417d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    filter: blur(15px) brightness(50%) grayscale();
+    height:100%;    
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+svg {
+    font-size: 0.8em;
+    width: 65%;
+    height: 60vh;    
+}
+
+#title{
+    font-size: 2vw;
+    margin:2vh 0 0 0;
+    width: 60%;
+    text-align: center;
+    padding-top:4vh;
+}
+
+p{  
+    margin:1vh 0 1vh 0;
+    width: 60%;
+    text-align: center;
+    padding: 2px 2px 2px 2px;
+
+    font-size:1vw;
+}
+
+#legend {
+    
+    font-size: 0.7em;
+    width: 65%;
+    height: 7vh;
+    padding-top:1em;
+    background-color: rgba(111,111,111,0.9);
+
+}
+
+#tooltip{
+    color:whitesmoke;
+    background-color: black;
+    padding:5px;
+    pointer-events: none;
+}
+
+.tile:hover {
+    filter:invert() contrast(80%);
+}
